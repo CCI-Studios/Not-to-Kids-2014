@@ -32,6 +32,7 @@ stylesheets[print][] = css/print.css
 
 regions[header] = Header
 regions[header-bottom] = Header bottom
+regions[header-language-switch] = language switch
 regions[help] = Help
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
@@ -63,4 +64,3 @@ settings[shortcut_module_link] = 0
 version = "7.31"
 project = "drupal"
 datestamp = "1407346433"
-

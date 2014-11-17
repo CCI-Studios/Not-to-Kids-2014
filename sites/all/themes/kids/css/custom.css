@@ -117,10 +117,28 @@ text-transform: uppercase;
 }
 #block-locale-language
 {
-    position: absolute;
     bottom: 0;
     z-index: 99999;
 }
+#block-locale-language h2
+{
+display:none;
+}
+
+#block-locale-language a
+{
+text-decoration:none;
+color:white;
+font-size: 14px;
+font-weight: bold;
+text-transform: capitalize;
+}
+
+
+
+
+
+
 .front #block-views-slider-title-block .view-slider-title .view-content div {
     margin-top: 25px;
 }

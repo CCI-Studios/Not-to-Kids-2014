@@ -63,6 +63,7 @@ if ( $result  > 3)
                        <div>&nbsp;</div>
                    </div>
 	       </div>
+	       
     <div class="moduletable lang">
       <div id="jflanguageselection">
         
@@ -70,23 +71,12 @@ if ( $result  > 3)
 			      <!--li id="active_language"><a href="http://packnation.com.au/not-to-kids/" ><span lang="en" xml:lang="en">English</span></a></li>
 			      <li><a href="http://packnation.com.au/not-to-kids/?q=fr/node/1" ><span lang="fr" xml:lang="fr">Francais</span></a></li-->
 
+<li> <?php print render($page['header-language-switch']); ?></li>
 
 
-			      <li><form method="post" action="<?php echo $engfile; ?>">
-  
-  <input type="hidden" value="homepage" name="homepage">
-  
-  <input type="submit" value="english" class="home_english_landing">
-  
-  </form></li>
+		
 			
-			<li><form method="post" action="<?php echo $frfile; ?>">
-  
-  <input type="hidden" value="homepage" name="homepage">
-  
-  <input type="submit" value="Francais" class="home_fr_landing">
-  
-  </form></li
+			
 		    </ul>
       </div>
       <!--JoomFish V2.1.6 (Twinkle)--> 
