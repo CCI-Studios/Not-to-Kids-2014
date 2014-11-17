@@ -1,0 +1,20 @@
+.colorList {
+	margin-left: 2em;
+	padding: 0;
+	list-style: square outside;
+}
+.colorList li {
+	padding-left: 1em;
+	margin-left: 0;
+}
+.colorList.red { list-style-image: url(../images/red_bullet.png); }
+.colorList.green { list-style-image: url(../images/green_bullet.png); }
+.colorList.blue { list-style-image: url(../images/blue_bullet.png); }
+.colorList.yellow { list-style-image: url(../images/yellow_bullet.png); }
+.colorList.orange { list-style-image: url(../images/orange_bullet.png); }
+
+.grey {
+	color: #818181;
+}
+
+.readmore {}

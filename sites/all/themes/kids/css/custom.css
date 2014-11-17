@@ -1,0 +1,164 @@
+/* @group Misc */
+sup { vertical-align: super; }
+a { color: white; text-decoration: none; }
+#content a { font-weight: bold; color: #E3242F; }
+a:hover { text-decoration: underline; }
+
+#sidebar p { margin-bottom: 10px; }
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+	font-weight: normal;
+	margin-bottom: 0.7em;
+}
+
+h1 { font-size: 18px!important; font-weight: bold; margin-bottom: 20px; }
+h2 { font-size: 16px; margin-bottom: 20px; }
+h3 { font-size: 14px; }
+h4 { font-size: 12px; }
+h5 { font-size: 12px; }
+h6 { font-size: 12px; }
+
+.hr { width: 75%; height: 2px; background: #c00; margin: 1em auto; }
+
+img.border { padding: 4px; border: 1px solid #E3242F; }
+ul.spaced li { padding-bottom: 0.5em; }
+/* @end */
+
+/* @group ie6 redirect */
+.ie6warn {
+	background-color: #edee98;
+	border-bottom: 1px solid #a66929;
+ }
+ .ie6warn p {
+	line-height: 2em;
+    margin: 0 1em;
+}
+/* @end */
+
+/* @group Fonts */
+@font-face {
+	font-family: AvantGarde;
+	src: url(../fonts/avant_garde.eot) /* EOT file for IE */
+}
+@font-face {
+	font-family: AvantGarde;
+	src: url(../fonts/avant_garde.TTF) /* TTF file for CSS3 browsers */
+}
+@font-face {
+	font-family: AvantGarde;
+	font-weight: bold;
+	src: url(../fonts/avant_garde.TTF) /* TTF file for CSS3 browsers */
+}
+/* @end */
+
+/* @group clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+/* @end */
+
+
+/* @group spacing */
+.width25 { width:  25%; }
+.width50 { width:  50%; }
+.width75 { width:  75%; }
+.width33 { width:  33%; }
+.width66 { width:  66%; }
+
+.left { float: left; }
+.right { float: right; }
+.clear, .clr { clear: both; }
+.hidden { display: none; }
+.center { text-align: center; }
+/* @end */
+
+/* @group Joomla */
+.headline {
+	margin-top: -2em;
+}
+
+.blog .item { margin-top: 3em; }
+.blog .item:first-child { margin-top: 2em; }
+
+/* @end */
+
+/* @group Q and A */
+.QandA {}
+.QandA .question { }
+.QandA .answer { margin-bottom: 1em; }
+/* @end */
+
+/* @group modal popup */
+#sbox-content { background: #000; }
+/* @end */
+/*********************************************slider****************************/
+#block-views-slider-title-block .view-slider-title span{
+	  background: url("../images/footer_bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    line-height: 32px;
+    cursor: pointer;
+}
+#block-views-slider-title-block .view-slider-title span a{
+font-size: 15px;
+text-transform: uppercase;
+}
+#block-views-slider-block {
+    left: 0;
+    position: absolute;
+}
+#block-locale-language
+{
+    position: absolute;
+    bottom: 0;
+    z-index: 99999;
+}
+.front #block-views-slider-title-block .view-slider-title .view-content div {
+    margin-top: 25px;
+}
+#block-views-slider-title-block .view-slider-title .view-content div {
+    margin-top: 12px;
+    position: relative;
+    z-index: 99;
+}
+
+#header .header_image .description > div {
+    background: url("../images/description_bg.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+ font-size: 16px;
+    line-height: 38px;
+    margin: 0 11px;
+    padding: 0 17px;
+    position: relative;
+    top: 454px;
+
+}
+#menu > .inner{
+	background: none;
+}
+#wrapper_landing {
+    background: url("../images/splash.jpg") no-repeat scroll 0 0 #010101;
+    color: #FFFFFF;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+}
+.jflanguageselection {
+    margin-top: -24px;
+}
+
+.form-item.form-type-item {
+    display: none;
+}
+.page-node-12 #page-title {
+    display: none;
+}
+.page-node-15 #page-title {
+    display: none;
+}
