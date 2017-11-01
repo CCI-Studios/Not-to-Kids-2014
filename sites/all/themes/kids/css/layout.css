@@ -98,3 +98,20 @@ body,
   width: 940px;
   min-width: 920px;
 }
+
+#block-block-8,
+#block-block-9
+{
+  margin-top: 210px;
+}
+
+.logo_pg
+{
+  display: none;
+}
+
+#block-block-10,
+#block-block-11
+{
+  margin-top: 35px;
+}
