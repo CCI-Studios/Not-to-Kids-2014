@@ -86,7 +86,7 @@ if ( $result  > 3)
     <div class="moduletable logo">
       <?php if ($logo): ?>
       <form method="post" action="<?php print $front_page; ?>">
-        <input type="hidden" value="homepage" name="homepage"-->
+        <input type="hidden" value="homepage" name="homepage">
         <input type="submit" value="logo" class="logo_pg">
       </form>
       <?php endif; ?>

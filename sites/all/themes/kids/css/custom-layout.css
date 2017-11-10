@@ -43,16 +43,6 @@ body.home #header { background-position: center bottom; }
 	zoom: 1;
 }
 
-#menu {
-	margin: 0 0 11px;
-}
-#menu > .inner {
-	background: url(../images/menu_shadow.png) bottom repeat-x;
-	padding: 0 0 8px;
-	height: 32px;
-	width: 100%;
-}
-
 #content {
 	background: url(../images/component_bg_top.png) no-repeat top;
 	padding: 33px 0 0;
@@ -143,9 +133,6 @@ body.home #header { background-position: center bottom; }
 #block-views-slider-block .views-row{
 	display: none;
 }
-.front #header{
-	min-height: 415px;
-}
 #block-views-slider-title-block .views-row {
     float: left;
     text-align: center;
@@ -180,7 +167,7 @@ body.home #header { background-position: center bottom; }
 #flexslider-1
 {
 position:absolute;
-top:-370px;
+top:-225px;
 left:-140px;
 }
 div.link-wrapper {

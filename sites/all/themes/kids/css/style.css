@@ -854,11 +854,6 @@ ul.links {
 .sidebar .section {
   padding-top: 10px;
 }
-.sidebar .block {
- 
-  padding: 15px 20px;
-  margin: 0 0 20px;
-}
 .sidebar h2 {
   margin: 0 0 0.5em;
   /*border-bottom: 1px solid #d6d6d6;*/
@@ -1769,10 +1764,6 @@ margin-bottom:-18px;
 .slides > li img {
 margin-left:52px;
 }
-#body > .inner 
-{
-margin-top: -21px;
-}
 
 #sidebar .menu li a{
 color: #E3242F;
@@ -2053,7 +2044,7 @@ padding:0px 9px!important;
     width: 705px;}
 
 .inner-left #page-title{margin-top:-20px;}
-.not-front #flexslider-1 {
+#flexslider-1 {
     left: -125px;
     position: absolute;
     top: -262px;
@@ -2071,27 +2062,24 @@ height:200px;
 {
 margin-top:4px!important;
 }
-.not-front #header{min-height:200px!important;
-height:200px!important;}
+#header{
+  min-height:200px!important;
+  height:200px!important;
+}
 
-.not-front #header .logo {
+#header .logo {
     bottom: 0;
     position: absolute;
     right: 13px;
     top: 38px;
 }
 
-.not-front #body > .inner{margin-top:-10px;}
-
 .not-front #menu > .inner{position:relative;top:-7px;}
-
-.not-front #content{margin-top:-20px;}
 
 .not-front #sidebar #resize {
      cursor: pointer;
     float: right !important;
     margin-right: -30px;
-    margin-top: -15px;
     position: relative;
     top: 0;
 }
@@ -2100,7 +2088,7 @@ height:200px!important;}
 max-width:175px;
 background-size:7% 75%;
 margin-left:15px;
-margin-top:-10px;}
+}
 
 .not-front .sidebar .block {
     margin: 0 0 20px;
@@ -2187,7 +2175,7 @@ text-decoration:none;
 {float: none !important;
     margin: 0;
     position: absolute;
-    top: -250px;}
+    top: -210px;}
 .field-name-field-flexslider-example-image.field-type-image.field-label-hidden img
 {
 width:409px;

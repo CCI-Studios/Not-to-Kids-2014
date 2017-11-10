@@ -88,8 +88,8 @@
 					;?>
 
 		    <ul class="jflanguageselection">
-			      <!--li id="active_language"><a href="http://packnation.com.au/not-to-kids/" ><span lang="en" xml:lang="en">English</span></a></li>
-			      <li><a href="http://packnation.com.au/not-to-kids/?q=fr/node/1" ><span lang="fr" xml:lang="fr">Francais</span></a></li-->
+			      <!--li id="active_language"><a href="http://packnation.com.au/not-to-kids/" ><span lang="en">English</span></a></li>
+			      <li><a href="http://packnation.com.au/not-to-kids/?q=fr/node/1" ><span lang="fr">Francais</span></a></li>-->
 			      <li><form method="post" action="<?php echo base_path(); ?> ">
   
   <input type="hidden" value="homepage" name="homepage">
@@ -104,7 +104,7 @@
   
   <input type="submit" value="Francais" class="home_fr_landing">
   
-  </form></li
+  </form></li>
 		    </ul>
       </div>
 	   
@@ -119,7 +119,7 @@
                        	
 		<form method="post">
   
-  <input type="hidden" value="homepage" name="homepage"-->
+  <input type="hidden" value="homepage" name="homepage">
   
 	
         <input type="submit" value="logo" class="logo_pg">
@@ -144,7 +144,7 @@
     </div></div> <!-- /.section, /#messages -->
   <?php endif; ?>
     
-         <div class="front-bottom-bg">
+         <div class="inner-left">
             <div id="content">
                <?php if ($tabs): ?>
         <div class="tabs">
@@ -159,30 +159,50 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
-            </div>
+            </div></div>
 
-</div>
+
+
+						<div id="sidebar">
+        <div id="resize"> <span style="font-size: 14px; cursor: pointer; padding-right: 10px;" onclick="resize(true)">A<sup>+</sup></span> <span style="font-size: 12px; cursor: pointer;" onclick="resize(false)">A<sup>-</sup></span> </div>
+        <?php if ($page['sidebar_first']): ?>
+        <div id="sidebar-first" class="column sidebar">
+
+
+  <?php $showfr = explode('/',$front_page);
+					if($showfr[1]=='fr'){ ?>
+             <div class="section"> <?php print render($page['sidebar_first_fr']); ?> </div>
+<?php	} else { ?>
+          <div class="section"> <?php print render($page['sidebar_first']); ?> </div>
+ <?php } ?>
+        </div>
+        <?php endif; ?>
+				</div>
+
+
+
+
+
+
+
     <div style="clear: both; height:22px; width: 100%"></div>
-    <div id="bottom">
-         <div class="inner">
-	     <?php print render($page['content_bottom']); ?>
-					<div class="clear"></div>
-				</div></div>
 							</div>
 		</div>
 
-		<div id="footer_spacer"></div>
-		 <?php $getfr= $_REQUEST['q'];
-					 $showfr = explode('/',$getfr);
+		<div id="footer_spacer"></div> 
+
+  <?php $showfr = explode('/',$front_page);
 			     
-					 
-					if($showfr[0]=='fr')
-					{?>
+				
+					if($showfr[1]=='fr')
+					{ ?>
 					             
-		                            <?php print render($page['footer-french']); ?>
+		                              <?php print render($page['footer-french']); ?>
 				<?php	}
 					else 
 					{ ?>
+
+
 		<div id="footer"><div class="inner"><div>
 					<div class="moduletable menu">
                                            <?php print render($page['footer']); ?>
@@ -197,9 +217,9 @@
 	
 			<div class="clear"></div>
 		</div></div></div> 	
-		
-		<?php } ?>
-	</div>
+         	<?php } ?>
+      
+</div>
 
 	<div class="hidden">
 		<ul class="menu"><li id="current" class="active item1"><a href="http://www.nottokids.ca/"><span>Home</span></a></li><li class="item36"><a href="/actions-and-links/"><span>Actions and Links</span></a></li><li class="item40"><a href="/illegal-cigarettes-lure-high-schoolers.html"><span>Illegal Cigarettes Lure High School Students</span></a></li></ul>
@@ -235,7 +255,7 @@
   
   </form></li>
 			
-			<li><form method="post" action="<?php print $front_page; ?>fr/">
+			<li><form method="post" action="/fr/">
   
   <input type="hidden" value="homepage" name="homepage">
   

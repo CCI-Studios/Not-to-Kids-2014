@@ -8,6 +8,5 @@ $aliases['ccistaging'] = array(
 	'path-aliases'=> array(
 		'%files'=> 'sites/default/files',
 	),
-	'ssh-options'=>'-p 37241'
 );
 
